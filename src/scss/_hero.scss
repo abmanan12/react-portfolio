@@ -1,0 +1,45 @@
+@media screen and (max-width: 568px) {
+    .picWidth {
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .content-width {
+        width: 90vw;
+    }
+
+    .picWidth {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 778px) {
+    .content-width {
+        width: 75vw;
+    }
+
+    .picWidth {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .content-width {
+        width: 60vw;
+    }
+
+    .picWidth {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .content-width {
+        width: 55vw;
+    }
+
+    .picWidth {
+        width: 450px;
+    }
+}
