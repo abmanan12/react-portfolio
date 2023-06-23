@@ -1,5 +1,9 @@
 @import './scss/bootstrap';
 @import './scss/hero';
+@import './scss/contect';
+@import './scss/skills';
+@import './scss/about';
+@import './scss/projects';
 
 * {
   margin: 0;
@@ -15,8 +19,20 @@
   align-items: center;
 }
 
-.img {
-  border-radius: 50%;
-  transform: rotate(-3deg) scale(0.6);
-  border: 7px solid black;
+.hero-height {
+  min-height: calc(100vh - 56px);
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-height {
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

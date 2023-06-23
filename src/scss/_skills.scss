@@ -1,0 +1,27 @@
+.card-align {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card1 {
+    width: 280px;
+    height: 265px;
+}
+
+.card2 {
+    width: 280px;
+    height: 265px;
+}
+
+@media screen and (max-width: 768px) {
+    .card1 {
+        width: 265px;
+        height: 265px;
+    }
+
+    .card2 {
+        width: 260px;
+        height: 265px;
+    }
+}

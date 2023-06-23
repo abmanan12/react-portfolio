@@ -1,0 +1,62 @@
+.card-size {
+    width: 240px;
+    height: 125px;
+}
+
+.card-align {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contect-icon>svg {
+    font-size: 1.6rem;
+}
+
+.write {
+    a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    span {
+        font-size: 0.8rem;
+        padding-left: 3px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .input-width {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575.33px) {
+    .input-width {
+        width: 300px;
+    }
+
+    .card-size {
+        width: 300px;
+        height: 125px;
+    }
+
+    .form-width {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .input-width {
+        width: 240px;
+    }
+
+    .card-size {
+        width: 240px;
+        height: 125px;
+    }
+}

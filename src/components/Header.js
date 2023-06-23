@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from './Hero'
 
 export default function Header() {
     return (
         <>
-            <nav className="navbar navbar-expand-md navbar-light top-0 sticky-top bg-light">
+            <nav className="navbar navbar-expand-md navbar-light top-0">
                 <div className="container">
 
                     <a className="navbar-brand" href="#">Abdul Manan</a>
@@ -17,25 +18,26 @@ export default function Header() {
 
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#hero">Home</a>
+                                <a className="nav-link" href="#hero">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#about">About</a>
+                                <a className="nav-link" href="#about">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#skills">Skills</a>
+                                <a className="nav-link" href="#skills">Skills</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#projects">Projects</a>
+                                <a className="nav-link" href="#projects">Projects</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#footer">Contact</a>
+                                <a className="nav-link" href="#contect">Contect</a>
                             </li>
                         </ul>
 
                     </div>
                 </div>
             </nav>
+
         </>
     )
 }
