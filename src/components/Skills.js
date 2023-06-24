@@ -48,7 +48,7 @@ export default function Skills() {
                                     </div>
                                     <div className="col">
                                         <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>React Native</h6>
+                                        </i></span><span className='fw-light'>React Native</span></h6>
                                         <p className='text-center'>Intermediate</p>
                                     </div>
                                 </div>

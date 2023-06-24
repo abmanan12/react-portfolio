@@ -30,7 +30,7 @@ export default function Contect() {
                     <h6 className='mb-0 fw-bold'>Gmail</h6>
                     <p className='mb-1'>abdulmanankam</p>
                     <p className='mb-0 write'><a href="mailto:abdulmanankam@gmail.com">write me
-                    </a><span><AiOutlineArrowRight /></span></p>
+                      <span><AiOutlineArrowRight /></span></a></p>
                   </div>
                 </div>
               </div>
@@ -42,7 +42,7 @@ export default function Contect() {
                     <h6 className='mb-0 fw-bold'>Whatsapp</h6>
                     <p className='mb-1'>+92 302 4946737</p>
                     <p className='mb-0 write'><a href="https://api.whatsapp.com/send?phone=923024946737">write me
-                    </a><span><AiOutlineArrowRight /></span></p>
+                      <span><AiOutlineArrowRight /></span></a></p>
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@ export default function Contect() {
                     <h6 className='mb-0 fw-bold'>Messenger</h6>
                     <p className='mb-1'>amanan.kamboh.7</p>
                     <p className='mb-0 write'><a href='https://m.me/amanan.kamboh.7'>write me
-                    </a><span><AiOutlineArrowRight /></span></p>
+                      <span><AiOutlineArrowRight /></span></a></p>
                   </div>
                 </div>
               </div>

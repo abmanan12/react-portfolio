@@ -4,7 +4,7 @@ import Hero from './Hero'
 export default function Header() {
     return (
         <>
-            <nav className="navbar navbar-expand-md navbar-light top-0">
+            <nav className="navbar navbar-expand-sm navbar-light top-0">
                 <div className="container">
 
                     <a className="navbar-brand" href="#">Abdul Manan</a>
