@@ -18,38 +18,34 @@ export default function Skills() {
                                 <h5 className="py-3 text-center">Frontend Developer</h5>
                                 <div className="row">
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>HTML</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        {/* <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
+                                        </i></span>HTML</h6> */}
+                                        <h6 className='mb-0'>HTML</h6>
+                                        <p>Intermediate</p>
                                     </div>
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>Bootstrap</h6>
-                                        <p className='text-center'>Intermediate</p>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>CSS</h6>
-                                        <p className='text-center'>Intermediate</p>
-                                    </div>
-                                    <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>JavaScript</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>Bootstrap</h6>
+                                        <p>Intermediate</p>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>React Js</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>CSS</h6>
+                                        <p>Intermediate</p>
                                     </div>
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span><span className='fw-light'>React Native</span></h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>JavaScript</h6>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col">
+                                        <h6 className='mb-0'>React Js</h6>
+                                        <p>Intermediate</p>
+                                    </div>
+                                    <div className="col">
+                                        <h6 className='mb-0'>React Native</h6>
+                                        <p>Intermediate</p>
                                     </div>
                                 </div>
                             </div>
@@ -60,38 +56,32 @@ export default function Skills() {
                                 <h5 className="py-3 text-center">Backend Developer</h5>
                                 <div className="row">
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>Firebase</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>Firebase</h6>
+                                        <p>Intermediate</p>
                                     </div>
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>NodeJs</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>NodeJs</h6>
+                                        <p>Begginer</p>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>Express</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>Express</h6>
+                                        <p>Begginer</p>
                                     </div>
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>Mongodb</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>Mongodb</h6>
+                                        <p>Begginer</p>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>Git</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>Git</h6>
+                                        <p>Begginer</p>
                                     </div>
                                     <div className="col">
-                                        <h6 className='mb-0'><span className='pe-2'><i className="fa-solid fa-circle-check">
-                                        </i></span>Github</h6>
-                                        <p className='text-center'>Intermediate</p>
+                                        <h6 className='mb-0'>Github</h6>
+                                        <p>Intermediate</p>
                                     </div>
                                 </div>
                             </div>

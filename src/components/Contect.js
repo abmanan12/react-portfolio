@@ -1,12 +1,42 @@
 import React from 'react'
 
+import emailjs from '@emailjs/browser'
+import { useFormik } from 'formik';
+import { contactSchema } from './Schema';
+
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaWhatsapp } from 'react-icons/fa';
 import { RiMessengerLine } from 'react-icons/ri';
 import { HiOutlineDocumentDuplicate } from 'react-icons/hi';
 
+const initialValues = {
+  name: '',
+  email: '',
+  project: ''
+}
+
 export default function Contect() {
+
+  const { values, handleBlur, handleChange, handleSubmit, errors, touched } = useFormik({
+    initialValues,
+    validationSchema: contactSchema,
+    validateOnChange: true,
+    validateOnBlur: false,
+    onSubmit: (values, action) => {
+      emailjs.send('service_4h6k1ow', 'template_r7w45k5', values, '2Ze704LpG-eKtAshb')
+        .then((response) => {
+          console.log(response);
+          console.log('Email sent successfully!');
+          action.resetForm();
+        })
+        .catch((error) => {
+          console.error('Failed to send email:', error);
+        });
+    },
+  })
+
+
   return (
     <>
 
@@ -66,22 +96,32 @@ export default function Contect() {
 
               <div className="row">
                 <div className="col form-width">
-                  <form>
+
+                  <form onSubmit={handleSubmit}>
                     <div className="mb-4">
-                      <input type="text" className="form-control shadow-none input-width py-2" placeholder="Insert your name" />
+                      <input type="text" className="form-control input-width py-2" name='name'
+                        onChange={handleChange} onBlur={handleBlur} value={values.name}
+                        placeholder="Insert your name" />
+                      {errors.name && touched.name ? <p className='errorText'>{errors.name}</p> : null}
                     </div>
                     <div className="mb-4">
-                      <input type="email" className="form-control shadow-none input-width py-2" placeholder="Insert your email" />
+                      <input type="email" className="form-control input-width py-2" name='email'
+                        onChange={handleChange} onBlur={handleBlur} value={values.email}
+                        placeholder="Insert your email" />
+                      {errors.email && touched.email ? <p className='errorText'>{errors.email}</p> : null}
                     </div>
                     <div className="mb-4">
-                      <textarea className="form-control shadow-none input-width" style={{ resize: 'none' }} rows="4"
-                        placeholder='Write your project'></textarea>
+                      <textarea className="form-control input-width" style={{ resize: 'none' }}
+                        name='project' onChange={handleChange} onBlur={handleBlur} value={values.project}
+                        rows="4" placeholder='Write your project'></textarea>
+                      {errors.project && touched.project ? <p className='errorText'>{errors.project}</p> : null}
                     </div>
                     <div className="mb-4 ms-1">
                       <button className='btn btn-secondary btn-sm btn-cv'>Send Message
                         <span><HiOutlineDocumentDuplicate /></span></button>
                     </div>
                   </form>
+
                 </div>
               </div>
 

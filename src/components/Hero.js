@@ -34,10 +34,12 @@ export default function Hero() {
 
                     </div>
 
-                    <div className="row mt-5">
-                        <div className="col d-flex flex-column flex-sm-row px-3 px-sm-0">
-                            <h5>My Services</h5>
-                            <p className='ms-sm-3'>Frontend Developer | Backend Developer</p>
+                    <div className="row" style={{ marginTop: '4rem' }}>
+                        <div className="col px-3 px-sm-0">
+                            <h5 className='mb-0'>My Services</h5>
+                            <p className=' mb-0 pt-3 pt-sm-1' style={{ textAlign: 'justify' }}>Web Development,
+                                including Front-End & Back-End (Begginer) Development and App Development, including
+                                Front-End Development. </p>
                         </div>
                     </div>
 
