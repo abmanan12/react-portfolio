@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <>
-            <div className='bg-dark text-light py-2 mt-5 text-center'>
+            <div className='py-3 mt-5 text-center border-top'>
 
             <div className="container">
                 <div className="row">

@@ -1,17 +1,40 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+
+import { motion, useAnimation, useInView } from 'framer-motion'
 
 export default function Skills() {
+
+    const animateRef = useRef(null)
+    const inView = useInView(animateRef, { once: false })
+    const controls = useAnimation()
+
+    const animationCard = {
+        visible: { opacity: 1, y: 0, scale: 1, },
+        hidden: { opacity: 0, y: 75, scale: 0.75 },
+    };
+
+    useEffect(() => {
+        if (inView) {
+            controls.start('visible')
+        }
+        else {
+            controls.start('hidden')
+        }
+    }, [inView, controls])
+
     return (
         <>
             <div id='skills' className='page-height'>
 
                 <div className="container content-width">
-                    <div className="row contentCenter align-items-center">
 
-                        <div className='text-center pb-3 pb-sm-5'>
-                            <h3 className='fw-bold mb-0'>Skills</h3>
-                            <p>My Technical Level</p>
-                        </div>
+                    <div className='text-center pb-3 pb-sm-5'>
+                        <h3 className='fw-bold mb-0'>Skills</h3>
+                        <p>My Technical Level</p>
+                    </div>
+
+                    <motion.div className="row contentCenter align-items-center" ref={animateRef}
+                        variants={animationCard} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
 
                         <div className="col-12 col-sm-6 card-align">
                             <div className="card card1 p-3 mx-2">
@@ -87,8 +110,7 @@ export default function Skills() {
                             </div>
                         </div>
 
-
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>

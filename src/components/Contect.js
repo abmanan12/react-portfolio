@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+
+import { motion, useAnimation, useInView } from 'framer-motion';
 
 import emailjs from '@emailjs/browser'
 import { useFormik } from 'formik';
@@ -17,6 +19,30 @@ const initialValues = {
 }
 
 export default function Contect() {
+
+  const animateRef = useRef(null)
+  const inView = useInView(animateRef, { once: false })
+  const controls = useAnimation()
+
+  const animationVariants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 100 },
+  };
+
+  const animationCard = {
+    visible: { opacity: 1, scale: 1, y: 0, },
+    hidden: { opacity: 0, scale: 0.75, y: 100 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+    else {
+      controls.start('hidden')
+    }
+  }, [inView, controls])
+
 
   const { values, handleBlur, handleChange, handleSubmit, errors, touched } = useFormik({
     initialValues,
@@ -42,19 +68,20 @@ export default function Contect() {
 
       <div id='contect' className='page-height'>
 
-        <div className="container content-width">
-          <div className="row">
+        <div className='text-center pb-3 pb-sm-5'>
+          <h3 className='fw-bold mb-0'>Contact Me</h3>
+          <p>Get in touch</p>
+        </div>
 
-            <div className='text-center pb-3 pb-sm-5'>
-              <h3 className='fw-bold mb-0'>Contact Me</h3>
-              <p>Get in touch</p>
-            </div>
+        <div className="container content-width">
+          <div className="row" ref={animateRef}>
 
             <div className="col-12 col-sm-6 card-align">
               <h5 className='text-center pb-2'>Talk to me</h5>
 
               <div className="row">
-                <div className="col">
+                <motion.div className="col"
+                  variants={animationCard} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
                   <div className="card mx-sm-3 mx-md-4 mx-lg-4 p-2 text-center card-size">
                     <p className='mb-2 contect-icon'><AiOutlineMail /></p>
                     <h6 className='mb-0 fw-bold'>Gmail</h6>
@@ -62,11 +89,12 @@ export default function Contect() {
                     <p className='mb-0 write'><a href="mailto:abdulmanankam@gmail.com">write me
                       <span><AiOutlineArrowRight /></span></a></p>
                   </div>
-                </div>
+                </motion.div>
               </div>
 
               <div className="row">
-                <div className="col">
+                <motion.div className="col"
+                  variants={animationCard} animate={controls} transition={{ duration: 2, delay: 0.30, }} initial='hidden'>
                   <div className="card my-3 mx-sm-3 mx-md-4 mx-lg-4 p-2 text-center card-size">
                     <p className='mb-2 contect-icon'><FaWhatsapp /></p>
                     <h6 className='mb-0 fw-bold'>Whatsapp</h6>
@@ -74,11 +102,12 @@ export default function Contect() {
                     <p className='mb-0 write'><a href="https://api.whatsapp.com/send?phone=923024946737">write me
                       <span><AiOutlineArrowRight /></span></a></p>
                   </div>
-                </div>
+                </motion.div>
               </div>
 
               <div className="row">
-                <div className="col">
+                <motion.div className="col"
+                  variants={animationCard} animate={controls} transition={{ duration: 2, delay: 0.35, }} initial='hidden'>
                   <div className="card mx-sm-3 mx-md-4 mx-lg-4 p-2 text-center card-size">
                     <p className='mb-2 contect-icon'><RiMessengerLine /></p>
                     <h6 className='mb-0 fw-bold'>Messenger</h6>
@@ -86,7 +115,7 @@ export default function Contect() {
                     <p className='mb-0 write'><a href='https://m.me/amanan.kamboh.7'>write me
                       <span><AiOutlineArrowRight /></span></a></p>
                   </div>
-                </div>
+                </motion.div>
               </div>
 
             </div>
@@ -95,7 +124,8 @@ export default function Contect() {
               <h5 className='text-center pb-2'>Write me your project</h5>
 
               <div className="row">
-                <div className="col form-width">
+                <motion.div className="col form-width"
+                  variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
 
                   <form onSubmit={handleSubmit}>
                     <div className="mb-4">
@@ -122,14 +152,12 @@ export default function Contect() {
                     </div>
                   </form>
 
-                </div>
+                </motion.div>
               </div>
 
             </div>
 
-
           </div>
-
         </div>
 
       </div>

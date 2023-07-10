@@ -13,6 +13,7 @@ export default function Projects() {
                 </div>
 
                 <div className='mb-3'><Project1 /></div>
+
                 <div><Project2 /></div>
 
             </div>
