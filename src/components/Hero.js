@@ -46,8 +46,8 @@ export default function Hero() {
                             variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
 
                             <h3 className='mb-3'>Front-End React Developer &#128075;</h3>
-                            <p style={{ textAlign: 'justify' }}>Hi, I'm Abdul Manan. I'm a Front-end React Developer and
-                                very passionate and dedicated to my work.</p>
+                            <p style={{ textAlign: 'justify' }}>Hi, I'm Abdul Manan. A Front-end React Developer deeply passionate and
+                                dedicated to my work. I also have a strong interest in Prompt Engineering. </p>
 
                             <div className='d-flex align-items-end gap-2'>
                                 <a href={resume} download><button className="btn btn-secondary btn-sm btn-cv">Download CV

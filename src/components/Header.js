@@ -13,11 +13,6 @@ export default function Header() {
         hidden: { opacity: 0, x: 50 },
     };
 
-    const animationCard = {
-        visible: { opacity: 1, scale: 1, y: 0 },
-        hidden: { opacity: 0, scale: 0.75, y: 100 },
-    };
-
     useEffect(() => {
         if (inView) {
             controls.start('visible')
@@ -57,7 +52,7 @@ export default function Header() {
                                 <a className="nav-link" href="#projects">Projects</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#contect">Contect</a>
+                                <a className="nav-link" href="#contect">Contact</a>
                             </li>
                         </motion.ul>
 

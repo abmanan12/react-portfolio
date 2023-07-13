@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Contect from './components/Contect';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import GoToTop from './components/GoToTop';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Projects />
         <Contect />
+        <GoToTop />
         <Footer />
 
       </>

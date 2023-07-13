@@ -49,8 +49,10 @@ export default function About() {
               style={{ textAlign: 'justify' }}>As a Junior Front-End Developer, I have a strong set of skills in HTML, CSS,
               JavaScript, React, Bootstrap, and SCSS. I specialize in creating and maintaining websites that are responsive
               and provide a user-friendly experience. I enjoy designing attractive and interactive interfaces by writing
-              clean and efficient code using the latest development tools and technologies. I also enjoy working in teams
-              and collaborating with cross-functional colleagues to create exceptional web applications.</motion.p>
+              clean and efficient code using the latest development tools and technologies. Additionally, I'm fascinated by
+              Prompt Engineering, which allows me to optimize AI queries for better user experiences by unlocking intelligent
+              and contextually accurate responses. I also enjoy working in teams and collaborating with cross-functional
+              colleagues to create exceptional web applications.</motion.p>
           </div>
 
           <motion.div className="d-flex about-card gap-2 mx-2 mx-sm-0"
