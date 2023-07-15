@@ -37,7 +37,7 @@ export default function Header() {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <motion.ul className="navbar-nav ms-auto mb-2 mb-lg-0"
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0"
                             variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
                             <li className="nav-item">
                                 <a className="nav-link" href="#hero">Home</a>
@@ -54,7 +54,7 @@ export default function Header() {
                             <li className="nav-item">
                                 <a className="nav-link" href="#contect">Contact</a>
                             </li>
-                        </motion.ul>
+                        </ul>
 
                     </div>
                 </div>

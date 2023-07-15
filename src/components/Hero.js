@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-import resume from './resume.pdf'
+import resume from './abdul-manan.pdf'
 import { motion, useAnimation, useInView } from 'framer-motion';
 
 import { HiOutlineDocumentDuplicate } from 'react-icons/hi';

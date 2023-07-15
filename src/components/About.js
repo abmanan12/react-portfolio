@@ -46,13 +46,12 @@ export default function About() {
 
           <div className="px-2 px-sm-0">
             <motion.p variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'
-              style={{ textAlign: 'justify' }}>As a Junior Front-End Developer, I have a strong set of skills in HTML, CSS,
-              JavaScript, React, Bootstrap, and SCSS. I specialize in creating and maintaining websites that are responsive
-              and provide a user-friendly experience. I enjoy designing attractive and interactive interfaces by writing
-              clean and efficient code using the latest development tools and technologies. Additionally, I'm fascinated by
-              Prompt Engineering, which allows me to optimize AI queries for better user experiences by unlocking intelligent
-              and contextually accurate responses. I also enjoy working in teams and collaborating with cross-functional
-              colleagues to create exceptional web applications.</motion.p>
+              style={{ textAlign: 'justify' }}>As a motivated and dynamic Junior Front-End Developer, I have a strong set of
+              skills in HTML, CSS, JavaScript, React, Bootstrap, SCSS and Firebase. Currently exploring the MERN Stack for
+              Full-Stack development, I specialize in creating responsive and user-friendly websites. With a passion for
+              designing attractive and interactive interfaces, I write clean and efficient code using latest development
+              tools and technologies. I am also fascinated by Prompt Engineering, optimizing AI queries for enhanced user
+              experiences. Collaborating with cross-functional teams, I enjoy creating exceptional web applications.</motion.p>
           </div>
 
           <motion.div className="d-flex about-card gap-2 mx-2 mx-sm-0"

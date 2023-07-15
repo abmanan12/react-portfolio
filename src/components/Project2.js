@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 import { motion, useAnimation, useInView } from 'framer-motion';
+import { HiOutlineLogout } from 'react-icons/hi';
 
 export default function Project2() {
 
@@ -36,20 +37,23 @@ export default function Project2() {
                 <div className="container content-width">
                     <div className="row flex-sm-row-reverse contentCenter text-center" ref={animateRef}>
 
-                        <h6 className='fw-bold mb-4'>RENTAL HAVEN &#128175;</h6>
+                        <h6 className='fw-bold mb-4'>E-COMMERCE &#128293;</h6>
 
                         <motion.div className="col-12 col-sm-6 text-center"
                             variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
-                            <img src="assets/Capture.png" className='project-img rounded' alt="network_error" />
-                            <h6 className='mt-3 mb-3 mb-sm-0 demo'>Live Demo</h6>
+                            <img src="assets/ecommerce.png" className='project-img rounded' alt="network_error" />
+                            <h6 className='my-3 mb-sm-0 demo'>
+                                <a href="https://ecommerce-app-a0516.web.app/" target="_blank" rel="noopener noreferrer">
+                                    Live Demo <span className='fs-5'>{<HiOutlineLogout />}</span></a>
+                            </h6>
                         </motion.div>
 
-                        <motion.div className="col-12 col-sm-6 px-4 px-sm-2"
+                        <motion.div className="col-12 col-sm-6 px-3"
                             variants={animationCard} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
-                            <p style={{ textAlign: 'justify' }}>A Rental Haven website is a plateform that allows users to
-                                rent their products (e.g vehicles, electronics, properties, household goods, human worker etc.)
-                                for personal or buisness use. It offers a seamless experience for users, allowing them to easily
-                                browse and list products etc, while fulfilling their rental requirements.
+                            <p style={{ textAlign: 'justify' }}>An e-commerce plateform provides customers the ability to browse,
+                                search, add products to cart and submit reviews. Implemented authentication for secure customer access,
+                                checkout functionality for payment and contact form to facilitate communication, It effectively meets
+                                customers' e-commerce needs.
                             </p>
                         </motion.div>
 
