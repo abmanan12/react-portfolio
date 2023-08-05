@@ -6,15 +6,15 @@ export default function Footer() {
 
     return (
         <>
-            <div className='py-3 mt-5 text-center border-top'>
+            <div className='py-3 mt-5 text-center border-top footer'>
 
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-                        &copy; copyright {year}. All rights reserved.
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            &copy; copyright {year}. Abdul Manan
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
 

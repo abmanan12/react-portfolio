@@ -6,7 +6,7 @@ export default function GoToTop() {
     const [isVisible, setIsVisisble] = useState(false)
 
     const goToBtn = () => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+        window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
     const listenToScroll = () => {
@@ -24,7 +24,7 @@ export default function GoToTop() {
 
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll)
-        return () => window.removeEventListener('scroll', listenToScroll)
+        // return () => window.removeEventListener('scroll', listenToScroll)
     })
 
     return (

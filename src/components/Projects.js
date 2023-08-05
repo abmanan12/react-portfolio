@@ -1,6 +1,7 @@
 import React from 'react';
 import Project1 from './Project1';
 import Project2 from './Project2';
+import OtherProject from './OtherProject';
 
 export default function Projects() {
     return (
@@ -15,6 +16,8 @@ export default function Projects() {
                 <div className='mb-3'><Project1 /></div>
 
                 <div><Project2 /></div>
+
+                <div className='mt-5'><OtherProject /></div>
 
             </div>
         </>

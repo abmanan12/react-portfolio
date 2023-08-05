@@ -90,17 +90,17 @@ export default function Skills() {
                                 <div className="row">
                                     <div className="col">
                                         <h6 className='mb-0 fw-bold'>Express</h6>
-                                        <p>Begginer</p>
+                                        <p>Intermediate</p>
                                     </div>
                                     <div className="col">
                                         <h6 className='mb-0 fw-bold'>Mongodb</h6>
-                                        <p>Begginer</p>
+                                        <p>Intermediate</p>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col">
                                         <h6 className='mb-0 fw-bold'>Git</h6>
-                                        <p>Begginer</p>
+                                        <p>Intermediate</p>
                                     </div>
                                     <div className="col">
                                         <h6 className='mb-0 fw-bold'>Github</h6>

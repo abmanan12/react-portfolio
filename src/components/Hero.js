@@ -5,6 +5,8 @@ import { motion, useAnimation, useInView } from 'framer-motion';
 
 import { HiOutlineDocumentDuplicate } from 'react-icons/hi';
 
+// react-intersection-observer
+
 export default function Hero() {
 
     const animateRef = useRef(null)
@@ -39,15 +41,16 @@ export default function Hero() {
 
                         <motion.div className="col-12 col-sm-6 col-md-7 text-center"
                             variants={animationCard} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
-                            <img src="assets/myPic.png" className='img picWidth' alt="network_error" />
+                            <img src="assets/myPic.png" className='img picWidth' loading='lazy' alt="network_error" />
                         </motion.div>
 
                         <motion.div className="col-12 col-sm-6 col-md-5 px-3 px-sm-0 mt-5 mt-sm-0"
                             variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
 
-                            <h3 className='mb-3'>Front-End React Developer &#128075;</h3>
-                            <p style={{ textAlign: 'justify' }}>Hi, I'm Abdul Manan. A Front-end React Developer deeply passionate and
-                                dedicated to my work. I also have a strong interest in Prompt Engineering. </p>
+                            <h3 className='mb-3'>Web and Mobile Developer &#128075;</h3>
+                            <p style={{ textAlign: 'justify' }}>Hi, I'm Abdul Manan, a passionate and dedicated web and mobile developer
+                                with a strong interest in prompt engineering.
+                            </p>
 
                             <div className='d-flex align-items-end gap-2'>
                                 <a href={resume} download><button className="btn btn-secondary btn-sm btn-cv">Download CV
@@ -65,9 +68,8 @@ export default function Hero() {
                         <motion.div className="col px-3 px-sm-0"
                             variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
                             <h5 className='mb-0'>My Services</h5>
-                            <p className=' mb-0 pt-3 pt-sm-1' style={{ textAlign: 'justify' }}>Web Development,
-                                including Front-End & Back-End (Begginer) Development and App Development, including
-                                Front-End Development. </p>
+                            <p className=' mb-0 pt-3 pt-sm-1' style={{ textAlign: 'justify' }}>Web Design (HTML, CSS, Bootstrap, SCSS,
+                                Material UI etc), Front-end Development (React js, React Native) & Backend Development (Firebase, MERN).</p>
                         </motion.div>
                     </div>
 

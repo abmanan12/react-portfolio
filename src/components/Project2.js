@@ -41,7 +41,7 @@ export default function Project2() {
 
                         <motion.div className="col-12 col-sm-6 text-center"
                             variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'>
-                            <img src="assets/ecommerce.png" className='project-img rounded' alt="network_error" />
+                            <img src="assets/ecommerce.png" className='project-img rounded' loading="lazy" alt="network_error" />
                             <h6 className='my-3 mb-sm-0 demo'>
                                 <a href="https://ecommerce-app-a0516.web.app/" target="_blank" rel="noopener noreferrer">
                                     Live Demo <span className='fs-5'>{<HiOutlineLogout />}</span></a>

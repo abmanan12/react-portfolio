@@ -46,12 +46,15 @@ export default function About() {
 
           <div className="px-2 px-sm-0">
             <motion.p variants={animationVariants} animate={controls} transition={{ duration: 2, delay: 0.25, }} initial='hidden'
-              style={{ textAlign: 'justify' }}>As a motivated and dynamic Junior Front-End Developer, I have a strong set of
-              skills in HTML, CSS, JavaScript, React, Bootstrap, SCSS and Firebase. Currently exploring the MERN Stack for
-              Full-Stack development, I specialize in creating responsive and user-friendly websites. With a passion for
-              designing attractive and interactive interfaces, I write clean and efficient code using latest development
+              style={{ textAlign: 'justify' }}>As a motivated and dynamic Web and Mobile Developer, I have a strong set of
+              skills in HTML, CSS, JavaScript, React, Bootstrap, SCSS and Firebase. Additionally, proficient in the Firebase
+              and MERN stack for backend development, I specialize in creating responsive and user-friendly websites. With a
+              passion for designing attractive and interactive interfaces, I write clean and efficient code using latest development
               tools and technologies. I am also fascinated by Prompt Engineering, optimizing AI queries for enhanced user
-              experiences. Collaborating with cross-functional teams, I enjoy creating exceptional web applications.</motion.p>
+              experiences. I am always looking for new challenges and opportunities to learn and grow. I am confident that my skills
+              and experience would be a valuable asset to your team. Collaborating with cross-functional teams, I enjoy creating
+              exceptional web applications.
+            </motion.p>
           </div>
 
           <motion.div className="d-flex about-card gap-2 mx-2 mx-sm-0"
@@ -64,7 +67,7 @@ export default function About() {
             <div className="card p-3 text-center">
               <p className='mb-1 fs-5'><GrCompliance /></p>
               <h6 className='mb-1'>Completed</h6>
-              <p className='mb-1'>10+ projects</p>
+              <p className='mb-1'>15+ projects</p>
             </div>
             <div className="card p-3 text-center">
               <p className='mb-1 fs-5'><BiSupport /></p>
